@@ -1,0 +1,24 @@
+package com.dailyinsuranceportal.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Policy {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+//	@NotBlank
+//	@Size(max = 20)
+	private String policyName;
+	
+	private String policyPremium;
+	
+	private String policyMaximumCoverage;
+	
+	
+}

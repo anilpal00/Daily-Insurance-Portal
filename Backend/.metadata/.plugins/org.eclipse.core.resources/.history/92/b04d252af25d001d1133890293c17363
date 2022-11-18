@@ -1,0 +1,5 @@
+package com.dailyinsuranceportal.repository;
+
+public interface UserPolicyClaim {
+
+}

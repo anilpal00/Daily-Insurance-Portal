@@ -1,0 +1,5 @@
+package com.dailyinsuranceportal.services;
+
+public class WalletService {
+
+}

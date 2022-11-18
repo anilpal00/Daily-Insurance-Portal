@@ -1,0 +1,49 @@
+package com.dailyinsuranceportal.entities;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class UserPolicyClaim {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@ManyToOne
+	@JoinColumn(name = "user_id", nullable = false)
+	private User user_id;
+	
+	@ManyToOne
+	@JoinColumn(name = "policy_id", nullable = false)
+	private Policy policy_id;
+	
+    @Column(name = "date_time_of_purchase")
+    @CreationTimestamp
+	private Date dateTimeOfPurchase;
+    
+    @Column(name = "claim_amount")
+    private Integer claimAmount;
+    
+    @Column(name = "claim_status")
+    private Integer claimStatus;
+    
+    @Column(name = "date_time_of_claim")
+    @UpdateTimestamp
+    private Date dateTimeOfClaim;
+	
+	
+}

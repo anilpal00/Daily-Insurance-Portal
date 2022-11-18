@@ -1,0 +1,41 @@
+package com.dailyinsuranceportal.services.impl;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dailyinsuranceportal.entities.Policy;
+import com.dailyinsuranceportal.entities.User;
+import com.dailyinsuranceportal.entities.Wallet;
+import com.dailyinsuranceportal.repository.UserRepository;
+import com.dailyinsuranceportal.repository.WalletRepository;
+import com.dailyinsuranceportal.services.WalletService;
+
+@Service
+public class WalletServiceImpl implements WalletService {
+
+	@Autowired
+	private WalletRepository walletRepository;
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Override
+	public Wallet addWalletBalance(Wallet walletBalance, User uid) {
+		Optional<User> user1 = userRepository.findById(uid.getId());
+		User user2 = user1.get();
+		walletBalance.setMode(walletBalance.getMode());
+		walletBalance.setAmount(walletBalance.getAmount());
+		walletBalance.setUser_id(user2);
+		Wallet wallet = this.walletRepository.save(walletBalance);
+		return wallet;
+	}
+
+	@Override
+	public Policy purchaseInsurancePolicy(Policy purchasePolicy, User uid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

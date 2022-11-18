@@ -1,0 +1,24 @@
+package com.dailyinsuranceportal.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.dailyinsuranceportal.entities.Wallet;
+import com.dailyinsuranceportal.services.WalletService;
+
+@RestController
+public class WalletController {
+
+	@Autowired
+	private WalletService walletService;
+	
+	@PostMapping("/wallet/{uid}")
+	public ResponseEntity<Wallet> addWalletBalance(@RequestBody Wallet walletBalance, @PathVariable Integer uid){
+		Wallet wallet = this.walletService.addWalletBalance(walletBalance, uid);
+		return ResponseEntity<Wallet>(wallet, HttpStatus.CREATED);
+	}
+}

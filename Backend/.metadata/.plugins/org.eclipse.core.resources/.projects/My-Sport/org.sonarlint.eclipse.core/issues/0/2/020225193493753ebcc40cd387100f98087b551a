@@ -1,0 +1,11 @@
+
+r
+java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(÷ããÈHýRCRITICALZVULNERABILITY
+Z
+java:S6212"/Declare this local variable with "var" instead.(š©­¸HþRINFOZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ò ¬ÝÿÿÿÿÿHÿRMINORZ
+CODE_SMELL
+l	java:S125"<This block of commented-out lines of code should be removed.(ÁÏƒÙÿÿÿÿÿH€RMAJORZ
+CODE_SMELL

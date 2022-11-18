@@ -1,0 +1,5 @@
+package com.dailyinsuranceportal.entities;
+
+public class Wallet {
+
+}

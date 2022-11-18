@@ -1,0 +1,16 @@
+package com.dailyinsuranceportal.services;
+
+import java.util.List;
+
+import com.dailyinsuranceportal.entities.Policy;
+import com.dailyinsuranceportal.entities.User;
+import com.dailyinsuranceportal.entities.UserPolicyClaim;
+import com.dailyinsuranceportal.entities.Wallet;
+
+public interface WalletService {
+
+	Wallet addWalletBalance(Wallet walletBalance, User uid);
+	List<Policy> getAllPolicy();
+	UserPolicyClaim purchaseInsurancePolicy(Policy purchasePolicyId, User uid);
+	
+}
