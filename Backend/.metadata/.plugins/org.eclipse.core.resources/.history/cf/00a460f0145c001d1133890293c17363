@@ -1,9 +1,0 @@
-package com.dailyinsuranceportal.services;
-
-import com.dailyinsuranceportal.entities.Wallet;
-import com.mysport.entities.SportBooking;
-
-public interface WalletService {
-
-	Wallet addWalletBalance(Wallet walletBalance, Integer uid);
-}

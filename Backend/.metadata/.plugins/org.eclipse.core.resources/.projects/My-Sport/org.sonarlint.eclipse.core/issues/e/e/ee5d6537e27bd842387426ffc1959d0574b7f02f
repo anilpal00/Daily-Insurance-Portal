@@ -1,13 +1,0 @@
-
-
-java:S1488!"dImmediately return this expression instead of assigning it to the temporary variable "sportBooking".(õ²ØÄHƒRMINORZ
-CODE_SMELL
-_
-java:S6212"/Declare this local variable with "var" instead.(äÌ’ÙşÿÿÿÿH…RINFOZ
-CODE_SMELL
-H
-java:S1116"Remove this empty statement.(ï”ÀH„RMINORZ
-CODE_SMELL
-
-java:S1488"mImmediately return this expression instead of assigning it to the temporary variable "sportBookingConfirmed".(äÌ’ÙşÿÿÿÿH‚RMINORZ
-CODE_SMELL

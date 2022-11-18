@@ -1,18 +1,0 @@
-
-ˆ	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ˆÌÿÿÿÿÿ8¢õÏ…Å0H‰RMINORZ
-CODE_SMELL
-s	java:S125."<This block of commented-out lines of code should be removed.(û®Áªıÿÿÿÿ8¢õÏ…Å0HŠRMAJORZ
-CODE_SMELL
-a
-java:S6212 "/Declare this local variable with "var" instead.(Øñµ8û€éÄ0H¿RINFOZ
-CODE_SMELL
-Œ
-java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(•şçş8ßŠëíÄ0H‡RMINORZ
-CODE_SMELL
-‘
-java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰›şÿÿÿÿ8ß—Ä0H’RMINORZ
-CODE_SMELL
-~
-java:S4684"@Replace this persistent entity with a simple POJO or DTO object.(û–¹’ûÿÿÿÿ8ß—Ä0HRCRITICALZVULNERABILITY
-~
-java:S4684+"@Replace this persistent entity with a simple POJO or DTO object.(©éÈÀúÿÿÿÿ8ıŞí‡Å0HãRCRITICALZVULNERABILITY
